@@ -1,0 +1,130 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: 0;
+}
+
+body{
+    background: url(barbie4.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container{
+    background-color: white;
+    max-width: 350px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px #00000070;
+    border-radius: 8px;
+}
+
+main h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+
+}
+
+main h2::before{
+    content:'';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background-color: #d9588f;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field{
+    position: relative;
+}
+
+form .input-field:first-child{
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before{
+    content: " ";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffacc2;
+}
+
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: #ab6f9e;
+}
+
+.input-field input::placeholder{
+    color:   #78396a;
+}
+
+form input[type="submit"]{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background-color: #d9588f;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+form input[type="submit"]:hover{
+    letter-spacing: 0.5px;
+    background-color: #ffacc2;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span{
+    color: #78396a;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .social-field{
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 220px;
+}
+
+.footer .social-field a{
+    text-decoration: none;
+    color:white;
+    width: 15px;
+}
+
+.footer .social-field.twitter{
+    background: #ffacc2;
+}
+
+.footer .social-field.facebook{
+    background: #ffacc2;
+}
